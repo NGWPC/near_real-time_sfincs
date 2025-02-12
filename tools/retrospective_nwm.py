@@ -77,16 +77,16 @@ if __name__ == "__main__":
     # parser.add_argument("--output-timeseries", required=False, default = False, help="Path to flow features gpkg")
 
     # Load NWM flows and HUC8 geodataframes
-    # parser.add_argument("--feature_id_file", required=True, help="feature_ids")
-    # parser.add_argument("--date-range", required=True, nargs=2, help="Date range (start end)")
-    # parser.add_argument("--output_path", required=True, help="Path to the output directory")
-    # args = parser.parse_args()
+    parser.add_argument("--feature_id_file", required=True, help="feature_ids")
+    parser.add_argument("--date-range", required=True, nargs=2, help="Date range (start end)")
+    parser.add_argument("--output_path", required=True, help="Path to the output directory")
+    args = parser.parse_args()
 
-    gen_retro_fim(
-        feature_id_file="/home/tadd.bindas/github/pi4/deliveries/rise_redelivery/near_real-time_sfincs/data/NWM/coffeyville_feature_ids_huc_8.npy", 
-        date_range=["2019-05-20", "2019-06-03"],
-        output_file="/home/tadd.bindas/github/pi4/deliveries/rise_redelivery/near_real-time_sfincs/data/NWM/huc_8_retro"
-    )
+    # gen_retro_fim(
+    #     feature_id_file="/home/tadd.bindas/github/pi4/deliveries/rise_redelivery/near_real-time_sfincs/data/NWM/coffeyville_feature_ids_huc_8_headwater.npy", 
+    #     date_range=["2019-05-20", "2019-06-03"],
+    #     output_file="/home/tadd.bindas/github/pi4/deliveries/rise_redelivery/near_real-time_sfincs/data/NWM/huc_8_retro_headwater"
+    # )
     # gen_retro_fim(
     #     feature_id_file=args.feature_id_file, 
     #     date_range=args.date_range,
