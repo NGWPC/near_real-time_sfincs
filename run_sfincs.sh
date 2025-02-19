@@ -57,6 +57,6 @@ docker run -v /tmp/sfincs_temp/ngwpc_data_huc8/:/data:rw deltares/sfincs-cpu:lat
 sudo chmod -R 777 /tmp/sfincs_temp/
 
 echo "Copying Data"
-cp -r /tmp/sfincs_temp/ngwpc_data/sfincs_map.nc data/SFINCS/ngwpc_data_huc8/
+cp -r /tmp/sfincs_temp/ngwpc_data_huc8/sfincs_map.nc data/SFINCS/ngwpc_data_huc8/
 
 echo "Done Running SFINCS"
